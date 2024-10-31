@@ -71,7 +71,7 @@ function Header() {
       INSPIRATION FOR TRAVEL BY REAL PEOPLE
       </div>
       <div className='flex justify-center mt-2'>
-        Book smart travel simpl
+        Book smart travel simple
         </div>
         <div className='flex justify-center mt-8 '>
         <button className='bg-white text-black font-bold text-sm border-4 border-black -tracking-widest p-2'>Smart planning your trip</button>

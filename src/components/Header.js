@@ -62,10 +62,22 @@ function Header() {
           placeholder="Search..."
           value={searchTerm}
           onChange={handleChange}
-          className="border rounded py-2 px-8 my-4" />
-          <FaSearch className='text-black my-7 relativ right-10'/>
+          className="border rounded py-2 px-8 my-4"/>
+          <FaSearch className='text-black my-7 relative right-10'/>
         </div>
     </section>
+    <div className='text-white mt-[7rem]'>
+    <div className='flex justify-center text-4xl'>
+      INSPIRATION FOR TRAVEL BY REAL PEOPLE
+      </div>
+      <div className='flex justify-center mt-2'>
+        Book smart travel simple
+        </div>
+        <div className='flex justify-center mt-8 '>
+        <button className='bg-white text-black font-bold text-sm border-4 border-black -tracking-widest p-2'>Smart planning your trip</button>
+        </div>
+      
+    </div>
     </div>
   )
 }

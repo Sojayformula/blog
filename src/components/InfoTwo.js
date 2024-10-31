@@ -70,9 +70,8 @@ function InfoTwo() {
     <>
     <div className='md:mx-20 mt-20 flex flex-col md:flex-row justify-between mx-10 '>
       
-    <div className='border border-red-900'>
-      
-      <div className='mx-0'>
+    <div>
+      <div>
         <a href='#'><MdOutlineBarChart className='mx-2 text-xl invisible md:visible'/></a>
         <p className='invisible md:visible'>views</p> 
         <p className='invisible md:visible'>1.6k</p>
@@ -87,15 +86,19 @@ function InfoTwo() {
 
 
       <div className='mt-5 space-y-2'>
+      <span>
         <a href='#'><MdFacebook className='mx-2 text-xl invisible md:visible'/></a>
         <p className='invisible md:visible'>125</p> 
-        <a href='#'><GrTwitter className='mx-2 text-xl invisible md:visible'/></a>
-        <a href='#'><SiPinterest className='mx-2 invisible md:visible'/></a>
+        </span>
+        <a href='#'><GrTwitter className='mx-2 text-xl mt-2 invisible md:visible'/></a>
+      <span>
+        <a href='#'><SiPinterest className='mx-2 mt-4 invisible md:visible'/></a>
         <p className='invisible md:visible'>125</p> 
+        </span>
       </div>
      </div>
 
-      <div className='md:mx- md:mr-[18rem] md:w-[50rem] md:w-ful border border-red-900 justify-center text-2xl md:text-lg md:mt-0 mt-[-20rem] font-europa'>
+      <div className='md:mx- md:mr-[18rem] md:w-[50rem] md:w-ful justify-center text-2xl md:text-lg md:mt-0 mt-[-20rem] font-europa'>
        {infoTwoText1}
 
         
@@ -139,18 +142,24 @@ function InfoTwo() {
             </div>
 
             <div className='flex mx-2'>
+            <a href="/" >
             <img src={image} className='w-10 h-10 my-[-10px]'/>
+            </a>
             <span>SHARE</span>
             <span className=''>694</span>
             </div>
 
             <div  className='flex mx-2'>
+            <a href="/" >
             <img src={image2} className='w-10 h-10 my-[-10px]  mx-[rem]'/>
+            </a>
             <span>TWITTER</span>
             </div>
 
             <div  className='flex mx-2'>
+              <a href="/" >
             <img src={image3} className='w-10 h-10 my-[-10px]'/>
+            </a>
             <span>694</span>
             </div>
             </div>
@@ -163,7 +172,7 @@ function InfoTwo() {
             </div>
 
             <div className='mt-20 mx-20'>
-              <div className='flex bg-black text-white justify-center  py-5'>
+              <div className='flex tracking-widest bg-black text-white justify-center py-5'>
                 <button>view comments (0)</button>
               </div>
 
@@ -226,7 +235,7 @@ function InfoTwo() {
         </div>
           </div>
     
-       <div className='conatiner [20rem] w-[20rem] text-2xl md:text-lg md:mx-[rem] mx-[rem] md:my-[-1px] border border-red-900 font-europa'>
+       <div className='conatiner [20rem] w-[20rem] text-2xl md:text-lg md:mx-[rem] mx-[rem] md:my-[-1px]  font-europa'>
         <div  className='font-bold '>
           Follow Us
         </div>

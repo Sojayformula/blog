@@ -34,13 +34,13 @@ function InfoThree() {
 
       {/* top image */}
       <div className=' md:mx- mt-10'>
-        <div className='border border-red-900 md:w-[55rem] md:h-[30rem]'>
+        <div className=' md:w-[55rem] md:h-[30rem]'>
         <img src={image} />
        </div>
       </div>
 
        {/* Top right images and text */}
-      <div className='mt-10 mx- border border-red-900 w-[10rem] md:w-full space-y-2 md:space-y-0'>
+      <div className='mt-10  w-[10rem] md:w-full space-y-2 md:space-y-0'>
           {data.map((item, index) => {
             return<div key={index}>
             <div className='flex flex-col md:flex-row'>
@@ -54,7 +54,7 @@ function InfoThree() {
 
     {/* Left social links */}
     <div className='container flex justify-between mx-20 md:mt-[-25rem] lg:mt-10 gap-4'>
-        <div className='border border-red-900 space-y-6'>
+        <div className='space-y-6'>
           <div className='border-b'>
             <span className='font-bold text-2xl'>966</span>
             <p className='text-gray-400'>Sares</p>
@@ -80,7 +80,7 @@ function InfoThree() {
         </div>
 
         {/* Main text/images */}
-        <div className='w-[50rem] font-europ border border-red-900'>
+        <div className='w-[50rem] font-europ '>
           <div>
             {infoThreeText1}
           </div>
@@ -201,7 +201,7 @@ function InfoThree() {
               <div className='mt-10'>
                 {infoThree11}
 
-                <div className='font-bold mt-10 space-y-4 mx-10'>
+                <div className='font-bold font-nuova mt-10 space-y-4'>
                   <p className='flex'>
                   <FaCheck className='text-green-600 mx-4'/>
                     Ulticies sit semper leo dolor maeceanas.
@@ -239,7 +239,7 @@ function InfoThree() {
           </div>
 
           {/* Social links on the right */}
-        <div className='border border-red-900 md:mr-[10rem] lg:mr-10'>
+        <div className='md:mr-[10rem] lg:mr-10'>
           <div className='tracking-widest'>
             SOCIAL LINKS
           </div>

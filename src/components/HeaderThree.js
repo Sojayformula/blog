@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
 import logo from '../assets/logo.png';
 import image from '../assets/Group9.png';
@@ -8,6 +8,8 @@ function HeaderThree() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const [activeLink, setActiveLink] = useState('');
+  const location = useLocation();
+  const currentPath = location.pathname;
   
 
   const handleChange = (event) => {
@@ -23,28 +25,28 @@ function HeaderThree() {
 
       <img src={logo} alt="Logo" className='w-[15rem]'/>
 
-      <div className='relative group text-white' >
+       <div className='relative group text-white' >
         <Link to='/'  
           onClick={() => handleClick("destination")}
-          className={`${activeLink === 'destination' ? 'underline' : ''} underline-offset-4 hover:underline decoration-blue-500 decoration-4 px-4 py-2 font-semibold`}
+          className={`${currentPath === '/' ? 'underline' : ''} underline-offset-4 hover:underline decoration-blue-500 decoration-4 px-4 py-2 font-semibold`}
           >
           Destination
         </Link>
 
         <Link to='/sport'    
           onClick={() => handleClick("sport")}
-          className={`${activeLink === 'sport' ? 'underline' : ''} underline-offset-4 hover:underline decoration-blue-500 decoration-4 px-4 py-2 font-semibold`}
+          className={`${currentPath === '/sport' ? 'underline' : ''} underline-offset-4 hover:underline decoration-blue-500 decoration-4 px-4 py-2 font-semibold`}
           >
           Sport
         </Link>
 
         <Link to='/food'    
           onClick={() => handleClick("food")}
-          className={`${activeLink === 'food' ? 'underline' : ''} underline-offset-4 hover:underline decoration-blue-500 decoration-4 px-4 py-2 font-semibold`}
+          className={`${currentPath === '/food' ? 'underline' : ''} underline-offset-4 hover:underline decoration-blue-500 decoration-4 px-4 py-2 font-semibold`}
           >
          Food
         </Link>
-      </div>
+      </div> 
 
       <div className='flex gap-2 mx-6 invisible lg:visible'>
         <input

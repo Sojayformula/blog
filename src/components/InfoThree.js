@@ -40,12 +40,12 @@ function InfoThree() {
       </div>
 
        {/* Top right images and text */}
-      <div className='mt-10  w-[10rem] md:w-full space-y-2 md:space-y-0'>
+      <div className='mt-10 mx-[-9rem] md:w-ful space-y-2 md:space-y-0 border border-red-900 w-[22rem]'>
           {data.map((item, index) => {
             return<div key={index}>
             <div className='flex flex-col md:flex-row'>
-              <img src={item.img} />
-             <p className='font-bold mt-[3rem] mx-4'>{item.text}</p>
+              <img src={item.img} className='w-[10rem] h-[8rem]'/>
+             <span className='font-bold mt-[3rem] mx-2'>{item.text}</span>
             </div>
         </div>
 })}
@@ -54,7 +54,7 @@ function InfoThree() {
 
     {/* Left social links */}
     <div className='container flex justify-between mx-20 md:mt-[-25rem] lg:mt-10 gap-4'>
-        <div className='space-y-6'>
+        <div className='space-y-6 '>
           <div className='border-b'>
             <span className='font-bold text-2xl'>966</span>
             <p className='text-gray-400'>Sares</p>
@@ -80,7 +80,7 @@ function InfoThree() {
         </div>
 
         {/* Main text/images */}
-        <div className='w-[50rem] font-europ '>
+        <div className='w-[42rem] font-europ'>
           <div>
             {infoThreeText1}
           </div>
@@ -239,7 +239,7 @@ function InfoThree() {
           </div>
 
           {/* Social links on the right */}
-        <div className='md:mr-[10rem] lg:mr-10'>
+        <div className='md:mr-[10rem] lg:mr-6'>
           <div className='tracking-widest'>
             SOCIAL LINKS
           </div>
